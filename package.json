@@ -1,0 +1,23 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malcolm1997/ToDoApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Malcolm1997/ToDoApp/issues"
+  },
+  "homepage": "https://github.com/Malcolm1997/ToDoApp#readme",
+  "dependencies": {
+    "@mysql/xdevapi": "^8.0.31"
+  }
+}
