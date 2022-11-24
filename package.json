@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/Malcolm1997/ToDoApp#readme",
   "dependencies": {
-    "@mysql/xdevapi": "^8.0.31"
+    "@mysql/xdevapi": "8.0.31"
   }
 }
