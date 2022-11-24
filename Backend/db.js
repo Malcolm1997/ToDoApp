@@ -19,6 +19,9 @@ let values = ["Estudiar", "Estudiar progrmacion", "1997-12-11", "1997-12-11"]
         })
         .then( table => {
             table.insert(nombreCol).values(values).execute()
+            .catch( (err) => {
+                console.log("Se a producido el siguiente error al cargar los datos a la bd: " + err.message)
+            })
         })
         .catch( err => {
             console.log("A ocurrido un error: " + err.message)
@@ -32,6 +35,9 @@ let values = ["Estudiar", "Estudiar progrmacion", "1997-12-11", "1997-12-11"]
             table.select().execute()
             .then( tareas => {
                 tareas.fetchAll()
+            })
+            .catch( err => {
+                console.log("Se a producido el siguiente error al requerir las tareas a la bd: " + err.message)
             })
         })
         .catch( err => {
