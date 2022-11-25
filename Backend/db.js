@@ -1,4 +1,5 @@
 const mysql = require("@mysql/xdevapi");
+const express = require("express")
 
 const config = {
     password: 'mnH4mvt9We4MryPquaja',
@@ -26,6 +27,8 @@ let values = ["Estudiar", "Estudiar progrmacion", "1997-12-11", "1997-12-11"]
         .catch( err => {
             console.log("A ocurrido un error: " + err.message)
         })
+
+
 
     mysql.getSession(config)
         .then( ( session )  => {
